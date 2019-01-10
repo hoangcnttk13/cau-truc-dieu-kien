@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Năm Nhuận</title>
+</head>
+<body>
+    <script>
+        var nam = parseInt(prompt("Nhập năm"));
+        if (nam%4==0) {
+            if(nam%100==0){
+                if (nam%400==0) {
+                    alert(nam+ "Là năm nhuận");
+                } else{
+                    alert(nam+ "Năm ko nhuận");
+                }
+            } else{
+                    alert(nam+ "Là năm nhuận");
+                }
+        } else{
+                    alert(nam+ "Năm ko nhuận");
+                }
+    </script>
+</body>
+</html>
