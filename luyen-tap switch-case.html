@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Luyện tập với cấu trúc switch-case</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var browser = prompt("Nhập vào:");
+		switch (browser) {
+			case 'Edge':
+			alert("You've got the Edge!");
+			break;
+			case 'Chrome':
+			case 'Firefox':
+			case 'Safari':
+			case 'Opera':
+				alert("Okay we support these browsers too");
+				break;
+            alert("We hope that this page looks ok!");
+		}
+	</script>
+	<script type="text/javascript">
+		var a = parseInt(prompt("Nhập a ?"));
+		switch(a){
+			case 0:
+    			alert( 0 );
+    			break;
+  			case 1:
+    			alert( 1 );
+    				break;
+  			case 2:
+  			case 3:
+   				alert( '2,3' );
+   				break;
+   			}
+	</script>
+	<script type="text/javascript">
+		var value = parseInt(prompt("Nhập số",0));
+		switch((value > 0) ? 1 : (value < 0) ? -1 :0){
+			case 1:
+				alert(1);
+				break;
+			case -1:
+				alert(-1);
+				break;
+			default:
+		}
+	</script>
+</body>
+</html>
