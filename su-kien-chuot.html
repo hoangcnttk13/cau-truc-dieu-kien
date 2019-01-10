@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sự kiện chuột</title>
+</head>
+<body>
+	<form>
+		<img id="anh" src="anh/quabong.jpg">
+		<p>Nhân vào để dịch chuyển</p>
+		<input type="button" value="Nhấn vào" onclick="moveRight();"/>
+	</form>
+	<script type="text/javascript">
+		var anh1 = null;
+		anh1 = document.getElementById('anh');
+		function init(){
+			anh1= document.getElementById('anh');
+			anh1.style.position = 'relative';
+			anh1.style.left = '0px';
+		}
+		function moveRight(){
+			anh1.style.left = parseInt(anh1.style.left) + 10 + 'px';
+		}
+		window.onload = init;
+		
+	</script>
+</body>
+</html>
