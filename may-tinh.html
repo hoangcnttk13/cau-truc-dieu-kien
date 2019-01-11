@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy Tính Đơn Giản</title>
+    <style type="text/css">
+    	#khung{ width: 500px; height: auto; margin: auto;}
+    	.manhinh{width: 250px; height: 35px;}
+    </style>
+</head>
+<body onload= "click()">
+<div id='khung'>
+	<form name="maytinh">
+		<table>
+			<tr>
+				<td colspan="3"><input type="text" class="manhinh" name="manhinh"></td>
+			</tr>
+			<tr>
+				<td><input class="button" type="button" value="1" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="2" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="3" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="+" onclick="hienthi(this.value)"></td>
+			</tr>
+				<tr>
+				<td><input class="button" type="button" value="4" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="5" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="6" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="-" onclick="hienthi(this.value)"></td>
+			</tr>
+				<tr>
+				<td><input class="button" type="button" value="7" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="8" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="9" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="*" onclick="hienthi(this.value)"></td>
+			</tr>
+				<tr>
+				<td><input class="button" type="reset" value="C" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="0" onclick="hienthi(this.value)"></td>
+				<td><input class="button" type="button" value="=" onclick="tinhtoan()"></td>
+				<td><input class="button" type="button" value="/" onclick="hienthi(this.value)"></td>
+			</tr>
+		</table>
+	</form>
+</div>
+<script type="text/javascript">
+	function click(){
+		document.maytinh.manhinh.click = true;
+	}
+	function hienthi(e){
+		document.maytinh.manhinh.value += e;
+	}
+	function tinhtoan(){
+		var tong = eval(document.maytinh.manhinh.value);
+		document.maytinh.manhinh.value= tong;
+	}
+	function tinhtoan(){
+		var hieu = eval(document.maytinh.manhinh.value);
+		document.maytinh.manhinh.value= hieu;
+	}
+	function tinhtoan(){
+		var tich = eval(document.maytinh.manhinh.value);
+		document.maytinh.manhinh.value= tich;
+	}
+	function tinhtoan(){
+		var thuong = eval(document.maytinh.manhinh.value);
+		document.maytinh.manhinh.value= thuong;
+	}
+</script>
+</body>
+</html>
+
+
+
